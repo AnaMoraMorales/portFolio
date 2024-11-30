@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Oloron';
+    src: url('fonts/oloron.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, h1, h2, p, .nav-link, .card-title, .card-text {
+    font-family: 'Oloron', sans-serif;
+}
+
+body {
+    background-color: #d3eee1;
+    color: #222222;
+}
+
+.navbar-header {
+    background-image: url('https://media.licdn.com/dms/image/v2/D4D16AQEMng0BR8C9lA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1672259273180?e=1738195200&v=beta&t=Vz_VxtNKWPKjft4gqv2CvM63vgLMG3A6FM4alnQdz_8');
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-header h1 {
+    color: #d3eee1;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #222222;
+}
+
+.navbar-nav .nav-link {
+    color: #d3eee1 !important;
+}
+
+.content-section {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo traslúcido */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.btn-primary {
+    background-color: #222222;
+    border-color: #222222;
+}
+
+.btn-primary:hover {
+    background-color: #d3eee1;
+    border-color: #d3eee1;
+    color: #222222;
+}
+
+h2 {
+    color: #222222;
+}
+
+.card {
+    background-color: rgba(211, 238, 225, 0.9); /* Fondo traslúcido para las tarjetas */
+    border-radius: 10px;
+}
+
+.card-title, .card-text {
+    color: #222222;
+}
