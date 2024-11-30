@@ -7,6 +7,7 @@
 
 body, h1, h2, p, .nav-link, .card-title, .card-text {
     font-family: 'Oloron', sans-serif;
+    text-align: justify;
 }
 
 body {
@@ -28,6 +29,10 @@ body {
     color: #d3eee1;
     font-size: 2rem;
     margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .navbar {
@@ -36,6 +41,10 @@ body {
 
 .navbar-nav .nav-link {
     color: #d3eee1 !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D\'http://www.w3.org/2000/svg\' viewBox%3D\'0 0 30 30\'%3E%3Cpath stroke%3D\'%23d3eee1\' stroke-width%3D\'2\' d%3D\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');
 }
 
 .content-section {
@@ -71,4 +80,19 @@ h2 {
 
 .card-title, .card-text {
     color: #222222;
+}
+
+.experience-section, .certifications-section, #proyectos, #contacto {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.experience-section h3, .certifications-section h3, #proyectos h2, #contacto h2 {
+    text-align: center;
+    background-color: #d3eee1;
+    padding: 10px;
+    border-radius: 10px;
 }

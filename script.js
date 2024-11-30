@@ -26,7 +26,6 @@ updateExperienceDates();
 document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
     event.stopPropagation();
-    event.preventDefault();
 
     const params = {
         nombre: document.getElementById("nombre").value,
