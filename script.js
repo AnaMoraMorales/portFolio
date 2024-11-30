@@ -2,6 +2,7 @@ function showSection(sectionId) {
     const sections = document.querySelectorAll('.content-section');
     sections.forEach(section => section.classList.remove('active'));
     document.getElementById(sectionId).classList.add('active');
+    if (sectionId === 'contacto') return;
 }
 
 function updateExperienceDates() {
@@ -19,19 +20,22 @@ updateExperienceDates();
 
 // EmailJS integration
 (function() {
-    emailjs.init("G-zCL-WjetcxTIzY3");
+    emailjs.init("YFvfVttKzaKlqQI1L");
 })();
 
 document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
     event.preventDefault();
 
     const params = {
         nombre: document.getElementById("nombre").value,
         email: document.getElementById("email").value,
-        mensaje: document.getElementById("mensaje").value
+        mensaje: document.getElementById("mensaje").value,
+        reply_to: document.getElementById("email").value
     };
 
-    emailjs.send("service_ffcm5b6","template_3mdp9ci", params)
+    emailjs.send("service_ffcm5b6", "template_3mdp9ci", params)
         .then(function(response) {
             alert("Mensaje enviado exitosamente!");
         }, function(error) {
