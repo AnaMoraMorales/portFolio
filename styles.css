@@ -1,12 +1,5 @@
-@font-face {
-    font-family: 'Oloron';
-    src: url('fonts/oloron.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body, h1, h2, p, .nav-link, .card-title, .card-text {
-    font-family: 'Oloron', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: justify;
 }
 
