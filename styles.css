@@ -142,6 +142,18 @@ progress {
     }
 }
 
+@media (max-width: 768px) {
+    .skills {
+        flex-direction: column;
+    }
+    .skill {
+        max-width: 100%;
+    }
+    .footer p {
+        font-size: 0.8rem;
+    }
+}
+
 .popup-message {
     position: fixed;
     top: 20px;
