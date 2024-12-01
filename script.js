@@ -36,8 +36,22 @@ document.querySelector("form").addEventListener("submit", function(event) {
 
     emailjs.send("service_ffcm5b6", "template_3mdp9ci", params)
         .then(function(response) {
-            alert("Mensaje enviado exitosamente!");
+            showPopup("Mensaje enviado exitosamente!");
         }, function(error) {
-            alert("Error al enviar el mensaje: " + error.text);
+            showPopup("Algo no ha ido como debía, vuelve a intentarlo más tarde");
         });
 });
+
+function showPopup(message) {
+    const popup = document.createElement('div');
+    popup.classList.add('popup-message');
+    popup.innerText = message;
+    document.body.appendChild(popup);
+
+    setTimeout(() => {
+        popup.classList.add('fade-out');
+        popup.addEventListener('transitionend', () => {
+            popup.remove();
+        });
+    }, 3000);
+} 
