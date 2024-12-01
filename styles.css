@@ -108,6 +108,12 @@ h2 {
     width: 100%;
 }
 
+@media (max-width: 600px) {
+    .footer p {
+        font-size: 0.8em;
+    }
+}
+
 .popup-message {
     position: fixed;
     top: 20px;
