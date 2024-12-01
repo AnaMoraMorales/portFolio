@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'Oloron';
+    src: url('fonts/oloron.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body, h1, h2, p, .nav-link, .card-title, .card-text {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oloron', sans-serif;
     text-align: justify;
 }
 
@@ -37,7 +44,7 @@ body {
 }
 
 .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D\'http://www.w3.org/2000/svg\' viewBox%3D\'0 0 30 30\'%3E%3Cpath stroke%3D\'%23d3eee1\' stroke-width%3D\'2\' d%3D\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D'http://www.w3.org/2000/svg' viewBox%3D'0 0 30 30'%3E%3Cpath stroke%3D'%23d3eee1' stroke-width%3D'2' d%3D'M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E');
 }
 
 .content-section {
@@ -96,6 +103,15 @@ h2 {
     color: #d3eee1;
     text-align: center;
     padding: 20px 0;
+}
+
+.footer p {
+    display: inline-block;
+    margin: 0;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .popup-message {
