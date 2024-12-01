@@ -40,6 +40,32 @@ body {
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D'http://www.w3.org/2000/svg' viewBox%3D'0 0 30 30'%3E%3Cpath stroke%3D'%23d3eee1' stroke-width%3D'2' d%3D'M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E');
 }
 
+.navbar-toggler {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler::after {
+    content: "Abrir Menú";
+    color: #d3eee1;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-nav .nav-item {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+.ml-2 {
+    margin-left: 0.5rem;
+}
 .content-section {
     display: none;
     background-color: rgba(255, 255, 255, 0.8); /* Fondo traslúcido */
