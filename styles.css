@@ -1,12 +1,5 @@
-@font-face {
-    font-family: 'Oloron';
-    src: url('fonts/oloron.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body, h1, h2, p, .nav-link, .card-title, .card-text {
-    font-family: 'Oloron', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: justify;
 }
 
@@ -98,20 +91,21 @@ h2 {
 }
 
 .footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    background-color: #000;
+    background-color: #000000;
     color: #d3eee1;
+    padding: 10px;
     text-align: center;
-    padding: 20px 0;
 }
 
 .footer p {
-    display: inline-block;
     margin: 0;
-    max-width: 100%;
+    font-size: 1em;
+    text-align: center;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    width: 100%;
 }
 
 .popup-message {
