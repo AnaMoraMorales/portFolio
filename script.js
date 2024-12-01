@@ -37,6 +37,9 @@ document.querySelector("form").addEventListener("submit", function(event) {
     emailjs.send("service_ffcm5b6", "template_3mdp9ci", params)
         .then(function(response) {
             showPopup("Mensaje enviado exitosamente!");
+            document.getElementById('nombre').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('mensaje').value = '';
         }, function(error) {
             showPopup("Algo no ha ido como debía, vuelve a intentarlo más tarde");
         });

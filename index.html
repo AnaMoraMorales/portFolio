@@ -53,16 +53,91 @@
     
     <div class="certifications-section container my-5" style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 10px;">
         <h3 style="text-align: center; background-color: #d3eee1; padding: 10px; border-radius: 10px;">Licencias y Certificaciones</h3>
-        <p><strong>Open Webinar</strong></p>
-        <ul>
-            <li>Curso de Git</li>
-            <li>Taller de desarrollo de CRUD en Java EE</li>
-            <li>Curso de Desarrollo Seguro</li>
-            <li>Curso de PHP y MySQL</li>
-            <li>Curso online de MongoDB</li>
-        </ul>
-        <a href="https://openwebinars.net/cert/6qPDW?r=2678b1d35&t=1641922949" style="color: blue;">VER CERTIFICACIONES</a>
-    </div>
+        <div class="accordion" id="certificationsAccordion">
+            <div class="card">
+                <div class="card-header" id="headingGit">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseGit" aria-expanded="true" aria-controls="collapseGit">
+                            Curso de Git <span class="ml-2">&#x25BC;</span>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseGit" class="collapse" aria-labelledby="headingGit" data-parent="#certificationsAccordion">
+                    <div class="card-body text-center">
+                        <img src="images/cert_git.png" alt="Certificación Git" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingCRUD">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseCRUD" aria-expanded="true" aria-controls="collapseCRUD">
+                            Taller de desarrollo de CRUD en Java EE <span class="ml-2">&#x25BC;</span>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseCRUD" class="collapse" aria-labelledby="headingCRUD" data-parent="#certificationsAccordion">
+                    <div class="card-body text-center">
+                        <img src="images/cert_crud_java_ee.png" alt="Certificación CRUD en Java EE" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingJava">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseJava" aria-expanded="true" aria-controls="collapseJava">
+                            Curso de Java 8<span class="ml-2">&#x25BC;</span>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseJava" class="collapse" aria-labelledby="headingJava" data-parent="#certificationsAccordion">
+                    <div class="card-body text-center">
+                        <img src="images/cert_java_8.png" alt="Certificación Java" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingDesarrollo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseDesarrollo" aria-expanded="true" aria-controls="collapseDesarrollo">
+                            Curso de Desarrollo Seguro <span class="ml-2">&#x25BC;</span>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseDesarrollo" class="collapse" aria-labelledby="headingDesarrollo" data-parent="#certificationsAccordion">
+                    <div class="card-body text-center">
+                        <img src="images/cert_desarrollo_seguro.png" alt="Certificación Desarrollo Seguro" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingPHP">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsePHP" aria-expanded="true" aria-controls="collapsePHP">
+                            Curso de PHP y MySQL <span class="ml-2">&#x25BC;</span>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapsePHP" class="collapse" aria-labelledby="headingPHP" data-parent="#certificationsAccordion">
+                    <div class="card-body text-center">
+                        <img src="images/cert_php_mysql.png" alt="Certificación PHP y MySQL" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingMongoDB">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseMongoDB" aria-expanded="true" aria-controls="collapseMongoDB">
+                            Curso online de MongoDB <span class="ml-2">&#x25BC;</span>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseMongoDB" class="collapse" aria-labelledby="headingMongoDB" data-parent="#certificationsAccordion">
+                    <div class="card-body text-center">
+                        <img src="images/cert_mongodb.png" alt="Certificación MongoDB" class="img-fluid">
+                    </div>
+                </div>
+            </div>
     
     <h3 style="text-align: center; background-color: #d3eee1; padding: 10px; border-radius: 10px;">HABILIDADES TÉCNICAS</h3>
         <div class="skills">
@@ -109,8 +184,8 @@
             <div class="skill">
                 <label for="unity">XML</label>
                 <progress id="unity" value="65" max="100"></progress>
-            </div>
         </div>
+    </div>
     </section>
     <section id="salesforce" class="content-section container my-5">
         <h2 style="text-align: center; background-color: #d3eee1; padding: 10px; border-radius: 10px;">SALESFORCE</h2>
