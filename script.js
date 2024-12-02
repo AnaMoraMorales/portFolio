@@ -26,6 +26,17 @@ updateExperienceDates();
 document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
     event.stopPropagation();
+    document.getElementById('loading-overlay').style.display = 'flex';
+    const emailInput = document.getElementById('email').value;
+    const emailError = document.getElementById('email-error');
+
+    if (!validarEmail(emailInput)) {
+        emailError.style.display = 'block';
+        document.getElementById('loading-overlay').style.display = 'none';
+        return;
+    }else{
+        emailError.style.display = 'none';
+    }
 
     const params = {
         nombre: document.getElementById("nombre").value,
@@ -40,10 +51,17 @@ document.querySelector("form").addEventListener("submit", function(event) {
             document.getElementById('nombre').value = '';
             document.getElementById('email').value = '';
             document.getElementById('mensaje').value = '';
+            document.getElementById('loading-overlay').style.display = 'none';
         }, function(error) {
             showPopup("Algo no ha ido como debía, vuelve a intentarlo más tarde");
+            document.getElementById('loading-overlay').style.display = 'none';
         });
 });
+
+function validarEmail(email) {
+    const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    return re.test(email);
+}
 
 function showPopup(message) {
     const popup = document.createElement('div');

@@ -197,3 +197,22 @@ progress {
 .popup-message.fade-out {
     opacity: 0;
 }
+
+/* Estilos para la ventana de carga */
+#loading-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+#loading-overlay .spinner-border {
+    width: 3rem;
+    height: 3rem;
+    color: #d3eee1;
+}
